@@ -1,0 +1,5 @@
+name: ArchUtilities
+version: 1.0
+author: Trixkz
+api-version: 1.13
+main: club.archdev.archutilities.ArchUtilities
