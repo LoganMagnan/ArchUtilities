@@ -65,7 +65,7 @@ public class ArchUtilities extends JavaPlugin {
     }
 
     private void loadListeners() {
-        ClassRegistrationUtils.loadListeners("club.archdev.archpickaxeenchantments.listeners");
+        ClassRegistrationUtils.loadListeners("club.archdev.archutilities.listeners");
     }
 
     public PlayerMenuUtil getPlayerMenuUtil(Player player) {
