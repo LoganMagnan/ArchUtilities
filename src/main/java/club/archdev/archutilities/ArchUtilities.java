@@ -67,18 +67,4 @@ public class ArchUtilities extends JavaPlugin {
     private void loadListeners() {
         ClassRegistrationUtils.loadListeners("club.archdev.archutilities.listeners");
     }
-
-    public PlayerMenuUtil getPlayerMenuUtil(Player player) {
-        PlayerMenuUtil playerMenuUtil;
-
-        if (playerMenuUtilMap.containsKey(player)) {
-            return playerMenuUtilMap.get(player);
-        } else {
-            playerMenuUtil = new PlayerMenuUtil(player);
-
-            playerMenuUtilMap.put(player, playerMenuUtil);
-
-            return playerMenuUtil;
-        }
-    }
 }

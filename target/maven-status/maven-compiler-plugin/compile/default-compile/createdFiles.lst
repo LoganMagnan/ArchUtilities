@@ -27,6 +27,7 @@ club\archdev\archutilities\utils\cuboid\Cuboid.class
 club\archdev\archutilities\utils\cuboid\CuboidDirection.class
 club\archdev\archutilities\utils\command\BukkitCommand.class
 club\archdev\archutilities\utils\LocationUtils.class
+club\archdev\archutilities\api\ArchUtilitiesAPI.class
 club\archdev\archutilities\utils\config\ConfigCursor.class
 club\archdev\archutilities\utils\menusystem\PlayerMenuUtil.class
 club\archdev\archutilities\utils\TimeUtils.class
