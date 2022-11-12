@@ -1,5 +1,6 @@
 package club.archdev.archutilities;
 
+import club.archdev.archutilities.api.ArchUtilitiesAPI;
 import club.archdev.archutilities.utils.ClassRegistrationUtils;
 import club.archdev.archutilities.utils.Utils;
 import club.archdev.archutilities.utils.command.CommandFramework;
@@ -19,6 +20,8 @@ public class ArchUtilities extends JavaPlugin {
 
     @Getter private static ArchUtilities instance;
 
+    private ArchUtilitiesAPI archUtilitiesAPI;
+
     private CommandFramework commandFramework = new CommandFramework(this);
 
     private HashMap<Player, PlayerMenuUtil> playerMenuUtilMap = new HashMap<>();
@@ -26,6 +29,8 @@ public class ArchUtilities extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
+
+        this.archUtilitiesAPI = new ArchUtilitiesAPI();
 
         Bukkit.getConsoleSender().sendMessage("------------------------------------------------");
         Bukkit.getConsoleSender().sendMessage(Utils.translate("&bArchUtilities &8- &av" + this.getDescription().getVersion()));
